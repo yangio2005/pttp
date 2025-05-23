@@ -1,0 +1,15 @@
+## Thêm Vào index/body 
+
+<body onload="loadNavbar()">
+  <div id="navbar"></div>
+
+  <!-- phần còn lại của trang -->
+## Thêm vào js
+
+function loadNavbar() {
+  fetch('bar.html')
+    .then(res => res.text())
+    .then(data => {
+      document.getElementById('navbar').innerHTML = data;
+    });
+}

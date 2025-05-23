@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Lọc người chưa đi học</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+ <body onload="loadNavbar()">
+  <div id="navbar"></div>
+
+  <!-- phần còn lại của trang -->
+
+
+  <div class="container">
+    <h2>Lọc người chưa có mặt (IN HOA - KHÔNG DẤU)</h2>
+
+    <label>Danh sách gốc (toàn bộ):</label>
+    <textarea id="listFull" rows="8" placeholder="Mỗi dòng 1 tên..."></textarea>
+
+    <label>Danh sách đã đi học:</label>
+    <textarea id="listPresent" rows="8" placeholder="Mỗi dòng 1 tên..."></textarea>
+
+    <button onclick="filterAbsent()">Lọc người chưa có mặt</button>
+
+    <label>Kết quả (người vắng):</label>
+    <textarea id="result" rows="8" readonly></textarea>
+
+    <button onclick="copyResult()">📋 Sao chép kết quả</button>
+  </div>
+
+  <script src="so-sanh.js"></script>
+</body>
+</html>
